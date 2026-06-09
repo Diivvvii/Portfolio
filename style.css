@@ -333,62 +333,12 @@
       opacity: 0;
       transform: translateY(20px);
     }
-/* MOBILE */
-@media (max-width: 768px) {
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .cert-list {
-    grid-template-columns: 1fr;
-  }
-
-  .skills-wrapper {
-    grid-template-columns: 1fr;
-  }
-
-  .exp-item {
-    grid-template-columns: 1fr;
-    gap: 8px;
-  }
-
-  .nav-links {
-    display: none;
-  }
-}
-/* MOBILE */
-@media (max-width: 768px) {
-
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .cert-list {
-    grid-template-columns: 1fr;
-  }
-
-  .exp-item {
-    grid-template-columns: 1fr;
-    gap: 8px;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  /* HERO RESPONSIVE */
+@media (max-width:768px){
 
   #hero{
-    min-height:auto;
-    padding:120px 20px 80px;
+    min-height:100vh;
+    padding:100px 20px 60px;
+    justify-content:center;
     text-align:center;
   }
 
@@ -398,6 +348,7 @@
 
   .hero-name{
     font-size:2.5rem;
+    line-height:1.2;
   }
 
   .hero-role{
@@ -406,6 +357,7 @@
 
   .hero-summary{
     max-width:100%;
+    font-size:0.95rem;
   }
 
   .hero-cta{
@@ -422,48 +374,43 @@
 
   .hero-social{
     justify-content:center;
+    flex-wrap:wrap;
   }
 
   .scroll-indicator{
     display:none;
   }
+
+  .blob1{
+    width:250px;
+    height:250px;
+  }
+
+  .blob2{
+    width:180px;
+    height:180px;
+  }
+
+  .blob3{
+    width:120px;
+    height:120px;
+  }
+
+  .about-grid,
+  .projects-grid,
+  .cert-list{
+    grid-template-columns:1fr;
+  }
+
+  .exp-item{
+    grid-template-columns:1fr;
+    gap:8px;
+  }
+
+  .nav-links{
+    display:none;
+  }
 }
-@media (max-width:480px){
-
-  .hero-name{
-    font-size:2rem;
-  }
-
-  .hero-role{
-    font-size:0.85rem;
-  }
-
-  .hero-summary{
-    font-size:0.9rem;
-  }
-
-}
-    .social-link {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      border: 1px solid rgba(240, 98, 146, 0.25);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--muted);
-      font-size: 0.9rem;
-      text-decoration: none;
-      transition: all 0.3s;
-    }
-
-    .social-link:hover {
-      border-color: var(--pink-mid);
-      color: var(--pink-bright);
-      background: rgba(233, 30, 140, 0.1);
-      transform: translateY(-3px);
-    }
-
     /* SCROLL INDICATOR */
     .scroll-indicator {
       position: absolute;
