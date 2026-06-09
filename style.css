@@ -243,15 +243,6 @@
       opacity: 0;
       transform: translateY(20px);
     }
-@media (max-width:768px){
-
-  .hero-name{
-    font-size: clamp(1.4rem, 5vw, 2rem);
-    line-height: 1.2;
-   white-space: nowrap;
-  }
-
-}
     .hero-name .highlight {
       background: var(--gradient);
       -webkit-background-clip: text;
@@ -289,6 +280,19 @@
       opacity: 0;
       transform: translateY(20px);
     }
+@media (max-width:768px){
+
+  .hero-name{
+    font-size: clamp(1.4rem, 6vw, 2rem);
+    line-height: 1.1;
+  }
+
+  .hero-name .highlight{
+    display:block;
+    font-size: clamp(1.3rem, 5.5vw, 1.8rem);
+  }
+
+}
 
     .btn-primary {
       display: inline-flex;
